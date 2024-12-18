@@ -1,0 +1,198 @@
+/* General Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #2196F3, #4CAF50);
+  }
+  
+  /* Main Container for ExpenseTracker */
+  .container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 800px; /* Set max width for responsiveness */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything horizontally */
+  }
+  
+  /* Title */
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Form Styling */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .input-field, .select-type, .input-date {
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+    transition: border 0.3s ease;
+    
+  }
+  
+  .input-field:focus, .select-type:focus, .input-date:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button.edit {
+    background-color: #f39c12;
+  }
+  
+  button.edit:hover {
+    background-color: #e67e22;
+  }
+  
+  button.delete {
+    background-color: #e74c3c;
+  }
+  
+  button.delete:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Entries List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  li {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li button {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  /* Chart Section */
+  .chart-container {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #555;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Summary Section (Boxed) */
+  .summary-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #ddd; /* Add border to box */
+    background-color: #fafafa; /* Light background color for the summary box */
+  }
+  
+  .summary-box h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .summary-box p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .form-container {
+      width: 100%;
+    }
+  
+    .input-field, .select-type, .input-date {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    li {
+      font-size: 0.9rem;
+    }
+  }
+  
